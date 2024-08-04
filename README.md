@@ -32,8 +32,8 @@ This project is a mini-website that collects and displays real-time price data f
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/real-time-price-data.git
-   cd real-time-price-data
+   git clone https://github.com/AniBirage/FomoFactory_Punyaja.git
+   cd my-realtime-app
    ```
 
 2. **Install Dependencies**
@@ -42,52 +42,48 @@ This project is a mini-website that collects and displays real-time price data f
    npm install
    ```
 
-3. **Set Up Environment Variables**
+### Running the Backend
 
-   Create a `.env` file in the root directory and add the following environment variables:
-
-   ```env
-   MONGODB_URI=mongodb://localhost:27017/price-data
-   API_KEY=your-api-key
-   API_URL=https://api.yourchosenapi.com/data
-   ```
-
-   Replace `your-api-key` and `https://api.yourchosenapi.com/data` with your actual API key and URL.
-
-4. **Run the Backend**
+1. Navigate to the backend folder:
 
    ```bash
-   npm run start:backend
+   cd backend
    ```
 
-5. **Run the Frontend**
-
-   In a new terminal window/tab:
+2. Start the backend server:
 
    ```bash
-   npm run start:frontend
+   npm start
    ```
 
-6. **Open the Application**
+   The backend server will run on `http://localhost:3303`.
 
-   Navigate to `http://localhost:3000` in your web browser to view the application.
+3. Check the backend API to view JSON data from the API:
 
-## Testing
+   ```url
+   http://localhost:3303/api/fetchStockPrices
+   ```
 
-To test the application locally, ensure both the backend and frontend services are running. The frontend will automatically fetch and display real-time data from the backend.
+### Running the Frontend
 
-## Contributing
+1. Open another terminal window/tab.
 
-Feel free to open issues or submit pull requests. Contributions to improve the functionality or add new features are welcome!
+2. Navigate to the frontend folder:
 
-## License
+   ```bash
+   cd frontend
+   ```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+3. Start the frontend server:
 
-## Acknowledgements
+   ```bash
+   npm run dev
+   ```
 
-- Thanks to [API provider name] for the data API.
-- [MongoDB](https://www.mongodb.com/) for the database service.
-- [Next.js](https://nextjs.org/) and [Redux](https://redux.js.org/) for the frameworks used.
+   The frontend application will be available at `http://localhost:3000`.
 
-Make sure to replace placeholder values with actual data and update any specific instructions if your setup differs.
+### Accessing the Application
+
+Navigate to `http://localhost:3000` in your web browser to view the application.
+
+## PS: This is my Brother's GitHub Account. Due to some Technical Issues with my Laptop I wasn't able to push it into my Account. Sorry for the Inconvenience and Thank You for Understanding.
